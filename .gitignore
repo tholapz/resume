@@ -1,0 +1,5 @@
+app/
+.htpasswd/
+apt360/
+error_log
+games/

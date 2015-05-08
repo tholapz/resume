@@ -1,0 +1,87 @@
+
+.main-info
+{
+	padding: 30px;
+	background-color: rgba(55,55,55,0.2);
+}
+html {
+	background: url(../img/bg1.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.kamol-title
+{
+	margin-top: 90px;
+}
+.photo-1
+{
+	/* background: url(../img/photosbg.jpg) no-repeat center top; */
+	/*
+background-attachment: fixed;
+	background-size: cover;
+*/
+}
+.row
+{
+	margin-top: 10px;
+}
+
+/*================
+     FOOTER 
+==================*/
+.main_footer{
+width: 100%;
+height: 310px;
+background: url(../img/txture.png);
+padding-top: 60px;
+}
+
+.footer {
+max-width:1026px;
+height: 210px;
+background-repeat:no-repeat;
+background-position:7px;
+margin:auto;
+margin-bottom: 30px;
+}
+
+#liste_footer {
+list-style:none;
+max-width:244px;
+height:48px;
+margin: 0 auto;
+padding-left:12px;
+}
+
+.footer li {
+float:left;
+padding-right:8px;
+}
+
+#twitter a ,
+ #linkedin a ,
+ #github a
+{
+background:url(../img/icons/webicon-twitter.svg) bottom;
+height: 48px;
+width: 48px;
+background-repeat: no-repeat;
+display:block;
+}
+
+ #linkedin a {
+background:url(../img/icons/webicon-linkedin.svg) bottom;
+}
+
+ #github a {
+background:url(../img/icons/webicon-github.svg) bottom;
+
+} 
+ #twitter a:hover,
+ #linkedin a:hover,
+ #github a:hover
+{
+background-position:top;
+}
