@@ -30,6 +30,7 @@ a:hover,a:focus {
     -webkit-column-gap: 0px;
     column-count: 3;
     column-gap: 0px;
+
 }
 .content img {
 	width: 100%;
@@ -40,6 +41,9 @@ a:hover,a:focus {
 }
 .content ul li {
 	padding: 10px;
+	-webkit-column-break-inside: avoid;
+          page-break-inside: avoid;
+               break-inside: avoid;
 }
 .content ul li div {
 	padding: 10px;
