@@ -12,11 +12,12 @@
     <meta property="og:image" content="http://tholapz.github.io/img/fb.png">
     <link rel="image_src" href="img/fb.png" />
     <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
-<!-- 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"> -->
-<!-- 	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css"> -->
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--  <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> -->
+<!--  <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/main.css">
    <link rel="shortcut icon" href="img/favicon.png">
 <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="https://google-code-prettify.googlecode.com/svn/trunk/styles/desert.css">
     <title>Kamol Treewatchararat</title>
 
    
@@ -49,23 +50,77 @@
        <hr/>
        
        <div class="content">
-		   <div class="intro">
-			   <h4>สวัสดี,</h4>
-			   <p>My name is Kamol and this is my personal website.</p>
-			   <p>I have helped several companies building great services that interface with hundreds of thousands users world wide. My goal is to create great business value using my proven expertise in agile, test-driven software development.</p>
-			   <p>A good team player, I emphasize communication within the team and value inputs from the people I work with.</p>
-			   <p>You can reach me via my <a href="mailto://kamol@tholapz.com">email address</a> or click "CONTACT" above.</p>
-			</div>
-			<div class="col-lg-2">
-			</div>
-		<div>
-	</div>
-   </div>      
+        <ul>
+          <li>
+            <div class="raspberry-pi">
+              <p>to shutdown raspberry pi</p>
+              <pre class="prettyprint lang-bash">sudo shutdown -h now</pre>
+            </div>
+          </li>
+          <li><div class="raspberry-pi">
+            <p>to restart raspberry pi</p>
+            <pre class="prettyprint lang-bash">sudo reboot</pre>
+          </div>
+          </li>
+          <li class=""><img src="http://placehold.it/1400x400"></li>
+          <li class=""><img src="http://placehold.it/400x400"></li>
+          <li class=""><img src="http://placehold.it/600x1600"></li>
+          <li><div class="git">
+            <p>to do git pull for all subdir level=1</p>
+            <pre class="prettyprint lang-bash">find . -type d -depth 1 -print -exec git --git-dir={}/.git --work-tree=$PWD/{} pull origin \;</pre>
+          </div>
+          </li>
+          <li><div class="bash"><p>to change terminal title</p>
+            <pre class="prettyprint lang-bash">echo -n -e "\033]0;TITLE_GOES_HERE\007"</pre>
+          </div></li>
+          <li><div class="bash"><p>to show git branch in prompt</p>
+            <pre class="prettyprint lang-bash">
+#in ~/.bash_profile
+parse_git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+export PS1="\u@\h \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $ "
+            </pre></div></li>
+          <li><div class="hls">
+            <p>to stream your Apple webcam from macbook</p>
+            <pre class="prettyprint lang-bash">
+brew install ffmpeg
+ffmpeg -f qtkit -i "default" out.mpg
+</pre>
+          </div>
+          </li>
+          <li>
+            <div class="nodejs">
+              <p>to print out stuff to clipboard</p>
+              <pre class="prettyprint lang-js">function pbcopy(data) { var proc = require('child_process').spawn('pbcopy'); proc.stdin.write(data); proc.stdin.end(); }</pre>
+            </div>
+          </li>
+          <li><div class="raspberry-pi"><p>to install omxplayer on raspberry pi</p>
+          <pre class="prettyprint lang-bash">sudo apt-get install omxplayer</pre></div></li>
+          <li><div class="raspberry-pi"><p>to install livestreamer</p>
+          <pre class="prettyprint lang-bash">sudo pip install livestreamer</pre></div></li>
+          <li><div class="raspberry-pi"><p>to view HLS stream from url</p>
+          <pre class="prettyprint lang-bash">livestreamer http://ustream.tv/channel/iss-hdev-payload mobile_480p --player omxplayer --fifo</pre></div></li>
+          <li><div class="raspberry-pi"><p>to keep spawning video if server's down</p>
+            <pre class="prettyprint lang-bash">
+#in /etc/rc.local
+sudo -u pi /home/pi/iss/iss-streamer >/dev/null 2>&1 &
+</pre>
+<pre class="prettyprint lang-bash">
+#in /home/pi/iss/iss-streamer
+#!/bin/bash
+while true
+do
+    livestreamer http://ustream.tv/channel/iss-hdev-payload mobile_480p --player omxplayer --fifo --player-args "--win \"0 0 1600 1200\" {filename}"
+done
+</pre></div></li>
+        </ul>
        </div>
-       
+
       </div>
-	 
-	 
+   
+   
 
     </div><!-- /.container -->
 
@@ -75,6 +130,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
 <script type="text/javascript" src="http://codeorigin.jquery.com/jquery-2.0.3.min.js"></script>
 <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 
   </body>
 </html>

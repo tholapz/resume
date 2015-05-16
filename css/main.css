@@ -24,6 +24,39 @@ a:hover,a:focus {
 }
 .content {
 	margin: auto;
+	-moz-column-count: 3;
+    -moz-column-gap: 0px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 0px;
+    column-count: 3;
+    column-gap: 0px;
+}
+.content img {
+	width: 100%;
+}
+.content ul {
+	list-style: none;
+	padding: 0;
+}
+.content ul li {
+	padding: 10px;
+}
+.content ul li div {
+	padding: 10px;
+}
+.raspberry-pi {
+	background-color: #FF0051;
+	color: white;
+}
+.git {
+	background-color: #E2DF9A;
+}
+.nodejs {
+	background-color: #E2DF9A;
+}
+.hls {
+	background-color: #757449;
+	color: white;
 }
 .exp {
 	padding-bottom: 5px;
