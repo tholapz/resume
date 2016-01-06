@@ -63,6 +63,14 @@
           </div>
           </li>
           <li><div class="git">
+            <p>to update and publish module</p>
+            <pre class="prettyprint lang-bash">
+npm version patch
+git push --follow-tags
+npm publish
+            </pre>
+          </div></li>
+          <li><div class="git">
             <p>to do git pull for all subdir level=1</p>
             <pre class="prettyprint lang-bash">find . -type d -depth 1 -print -exec git --git-dir={}/.git --work-tree=$PWD/{} pull origin \;</pre>
           </div>
