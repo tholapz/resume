@@ -1,0 +1,13 @@
+**My Story**
+Since my graduation 5 years ago, I have had the opportunity to build different types of web product ranging from enterprise, b2b software suite for financial institute to api server for mobile social app. I have been exposed to multitude of technology stacks such as Java, .net, PHP, Python, and lately JavaScript. That makes me become a quick learner. I pick up new technology easily by learning what problem it tries to solve and which approach it takes to do so. Some of my most distinguish projects are:
+
+ - Single Sign-On module for enterprise software suite - I use the open source access management and federation server platform, OpenSSO. I implement a unified, token-based authentication and authorization scheme that is used by websites and desktop software. This is done in Java’s J2EE framework deploying on Solaris machine, which I have experience writing shell script to automate code deployment and versioning.
+ - NodeJS RESTful api server for http://molo.me - The api provides standard CRUD operations, administrative features: ban/unban contents or users, broadcast notification to users, and profile management. This is the original reason why I like building products that are used by real people. I enjoy working with 3rd party mobile developers who are using our api to make the app on ios, Android, Symbian, and Windows Phone. I learn quickly what functionality I need to provide and have freedom to come up with creative solution to do so (and then reviewed by the team lead) and Node has been instrumental for rapid prototyping. I am impressed by how much my succinct codes can accomplish in comparison with my previous experience in Java.
+ - web dashboard and an array of web widgets — Design & develop web application, I use Backbone.js framework with jQuery, bootstrap, css preprocessor, and a collection of Grunt tasks to streamline web development process from design, develop, testing. I integrate each projects into client’s website via either iframe or requireJS’s module.exports using browserify depending on the client’s need.
+
+
+----------
+
+
+**What do I want?**
+I want to work in a tech company that emphasize on great user experience and intuitive ui. My recent experience is geared toward front-end development which I wish to take it further by working in a team of great people of different domains in order to broaden my horizon and learn from the best.

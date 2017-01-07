@@ -1,0 +1,9 @@
+I begin my career working as a software engineer at Reuters Software. I gained experience working in a big corporate environment but realize that my result-oriented working style does not suit me well within big, multi-tiered, bureaucratic organization. And Java as a programming language is very rigid and does not offer the flexibility I need.
+
+After 2 years, I eventually left Reuters in order to pursuit higher education. I was accepted into the Master degree in Computer Science program at University of Southern California. It's a two years program consisting of advanced topics such as Algorithm, Machine Learning, Computer Graphics, etc.
+
+I have learned JavaScript for sometimes. It is here at USC that I first get to work on a project using JavaScript as a primary tool. I rewrote a C++ codebase for 3D rendering program into JavaScript equivalent before getting introduced to ThreeJS.
+
+This experience proved valuable as it got me my first job after school at Telescope Inc as a front-end web developer. As a digital agency, Telescope's products are mainly small size widgets and one-off single page applications. I experience with state-of-art tools such as Grunt, Bower, Backbone, and Yeoman generator.
+It was more breadth of learning than the depth that I gained from working here. To compensate that, I picked up Node.JS and server-side JavaScript technology and work on personal project as a side. This ended up introducing me to the local JavaScript community in Los Angeles as well of dev/ops folks. I picked up server deployment and provisioning with Vagrant and then Docker Container by attending workshops and hackathons.
+
