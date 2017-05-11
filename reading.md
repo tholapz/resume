@@ -4,3 +4,4 @@
 3. The Four Steps to Epiphany by Steve Blank
 4. Rework by Jason Fried
 5. Test-Driven Development with Python by Harry J.W. Percival
+6. The Old Man and the Sea by Ernest Hemingway
