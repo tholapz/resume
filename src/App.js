@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import introductionTxt from './introduction.txt';
 
 import './bootstrap/css/bootstrap.min.css';
 import './App.css';
@@ -27,7 +28,7 @@ class App extends Component {
         </div>
         <div className="row">
           <h3>Introduction</h3>
-          <p>I help create several web applications which are used by hundreds of thousands of users world wide. I graduated from University of Southern California in 2013 with the Master's degree in Computer Science. In my spare time, I attend hackathon events in either LA or Bay Area. Apart from that, I read about Startup and History. My current book is Cracking the Coding Interview by Gayle Laakmann McDowell.</p>
+          <p>{ introductionTxt }</p>
         </div>
         <div className="row">
           <h3>Recommendations</h3>
