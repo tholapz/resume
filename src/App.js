@@ -4,17 +4,21 @@ import introductionTxt from './introduction.txt';
 import './bootstrap/css/bootstrap.min.css';
 import './App.css';
 
+const Container = ({children}) => (<div className="container">{children}</div>);
+const Header = ({children}) => (<div className="row header clearfix">{children}</div>);
+const Jumbotron = ({children}) => (<div className="row jumbotron">{children}</div>);
+const ButtonSuccess = ({children, ...props}) => (<a className="btn btn-lg btn-success" role="button" {...props}>{children}</a>);
 class App extends Component {
   render() {
     return (
-      <div className="container">
-        <div className="row header clearfix">
+      <Container>
+        <Header>
           <h3 className="text-muted">Kamol Treewatchararat</h3>
-        </div>
-        <div className="row jumbotron">
-          <p className="lead">My name is Kamol. I'm a software engineer from Thailand. I'm currently working at a startup company called Vixlet.</p>
-          <p><a className="btn btn-lg btn-success" href="http://tholapz.com/resume.pdf" role="button">Download My Resume</a></p>
-        </div>
+        </Header>
+        <Jumbotron>
+          <p>Senior Software Engineer from Thailand. Specialized in UI Development (ReactJS). Currently working at <a href="https://www.apple.com/">Apple</a>.</p>
+          <p><ButtonSuccess href="//tholapz.com/resume.pdf">Download My Resume</ButtonSuccess></p>
+        </Jumbotron>
         <div className="row">
           <ul>
             <li>Check out <a href="https://github.com/tholapz/resume/blob/gh-pages/reading.md">my reading list here</a>.</li>
@@ -49,7 +53,7 @@ class App extends Component {
         <footer className="footer">
           <p>This project was bootstrapped with <a href="https://github.com/facebookincubator/create-react-app">Create React App</a>.</p>
         </footer>
-      </div>
+      </Container>
     );
   }
 }
